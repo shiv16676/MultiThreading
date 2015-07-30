@@ -18,7 +18,7 @@ public class Processor {
 		synchronized (this) {
 			System.out.println("Waiting for the enter key");
 			sc.nextLine();
-			System.out.println("Enter key processed");
+			System.out.println("Enter key pressed");
 			notify();
 			
 			//just to prove that notify() method works unlike wait() in a way that notify() will release the lock after current synchronized block
